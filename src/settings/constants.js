@@ -1,0 +1,4 @@
+export const EXAMPLE = {
+  EXAMPLE_SET: "EXAMPLE::SET",
+  EXAMPLE_RESET: "EXAMPLE::RESET"
+};
