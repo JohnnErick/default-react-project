@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { fetchExample } from "actions/example";
 import { example } from "selectors/example";
@@ -16,7 +17,9 @@ class ExampleWrapper extends Component {
     console.log(example);
 
     return (
-      <Container>Example Wrapper Content</Container>
+      <Container>
+        Example Wrapper Content <Link to="/">Home Example Page</Link>
+      </Container>
     );
   }
 }

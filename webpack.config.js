@@ -2,6 +2,9 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  output: {
+    publicPath: '/'
+  },
   resolve: {
     alias: {
       actions: path.resolve(__dirname, "src/actions/"),
@@ -30,6 +33,9 @@ module.exports = {
         ]
       }
     ]
+  },
+  devServer: {
+    historyApiFallback: true,
   },
   plugins: [
     new HtmlWebPackPlugin({
